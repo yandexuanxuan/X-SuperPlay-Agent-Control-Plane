@@ -1,0 +1,35 @@
+schema_version: 1
+
+opc_parent:
+  repo: yandexuanxuan/X-SuperPlay-OPC-Blueprint
+  rollout_issue: yandexuanxuan/X-SuperPlay-OPC-Blueprint#69
+
+workstream:
+  id: WS-003
+  class: INFRASTRUCTURE
+  role: agent_execution_infrastructure
+
+business_progress:
+  direct: false
+  note: Agent orchestration improves execution reliability but is not itself commercial progress.
+
+authority:
+  owns:
+    - agent execution orchestration
+    - task routing
+    - cooldown and execution-state visibility
+    - technical isolation and recovery
+    - technical tests and backlog
+  does_not_own:
+    - Personal Economic Stage
+    - canonical Offer state or priority
+    - revenue truth
+    - PD evidence state
+    - productization decision
+    - founder business decision
+
+invariants:
+  implementation_source_of_truth: yandexuanxuan/X-SuperPlay-Agent-Control-Plane
+  business_source_of_truth: yandexuanxuan/X-SuperPlay-OPC-Blueprint
+  technical_completion_equals_commercial_progress: false
+  ai_agent_is_business_source_of_truth: false
